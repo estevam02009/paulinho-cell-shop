@@ -1,5 +1,5 @@
 // Exemplo em app/products/[category]/page.tsx (o mesmo se aplica a app/page.tsx)
-import { Product } from '../../(data)/products';
+// import { Product } from '../../(data)/products';
 import products from '../../(data)/products';
 import ProductCard from '../../(components)/ProductCard';
 

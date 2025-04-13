@@ -1,4 +1,4 @@
-import { Product } from '../../(data)/products';
+// import { Product } from '../../(data)/products';
 import products from '../../(data)/products';
 
 interface Props {
