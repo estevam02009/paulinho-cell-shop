@@ -2,13 +2,13 @@
 import products from '../../(data)/products';
 
 interface Props {
-    params: { slug: string };
+    params: { id: string };
     searchParams?: { [key: string]: string | string[] | undefined }; // Opcional, mas comum
 }
 
-const ProductDetailPage = ({ params }: Props) => {
-    const { slug } = params;
-    const product = products.find((p) => p.slug === slug);
+const ProductDetailPage = ({ params, searchParams }: Props) => {
+    const { id } = params;
+    const product = products.find((p) => p.id === id);
 
     if (!product) {
         return <div>Produto não encontrado.</div>;
@@ -21,7 +21,7 @@ const ProductDetailPage = ({ params }: Props) => {
             </div>
             <div className="md:order-2">
                 <h1 className="text-3xl font-bold mb-4">{product.name}</h1>
-                <p className="text-gray-700 mb-4">${product.price.toFixed(2)}</p>
+                <p className="text-gray-700 mb-4">R${product.price.toFixed(2)}</p>
                 <p className="text-gray-600 mb-4">{product.description}</p>
                 <h2 className="text-xl font-semibold mb-2">Especificações</h2>
                 <ul className="list-disc list-inside mb-4">
