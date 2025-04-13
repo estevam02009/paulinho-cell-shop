@@ -8,7 +8,7 @@ interface Props {
     searchParams: { [key: string]: string | string[] | undefined }; // For filtering/sorting
 }
 
-const CategoryPage = ({ params, searchParams }: Props) => {
+const CategoryPage = ({ params }: Props) => {
     const { category } = params;
 
     const filteredProducts = products.filter(
