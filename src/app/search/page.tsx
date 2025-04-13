@@ -22,7 +22,7 @@ const SearchResultsPage = ({ searchParams }: Props) => {
 
     return (
         <div>
-            <h2 className="text-2xl font-bold mb-4">Resultados da pesquisa para "{query}"</h2>
+            <h2 className="text-2xl font-bold mb-4">Resultados da pesquisa para {query}</h2>
             {searchResults.length > 0 ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {searchResults.map((product) => (
