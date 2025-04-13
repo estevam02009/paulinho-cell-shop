@@ -3,6 +3,7 @@ import products from '../../(data)/products';
 
 interface Props {
     params: { slug: string };
+    searchParams?: { [key: string]: string | string[] | undefined }; // Opcional, mas comum
 }
 
 const ProductDetailPage = ({ params }: Props) => {
